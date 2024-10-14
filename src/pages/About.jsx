@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../components/ThemeContext'; // Import ThemeContext
 import "./About.css";
+import thiru2 from "/src/assets/photos/thiru.jpg"
 
 const About = () => {
   const { theme } = useContext(ThemeContext); // Get the theme from context
@@ -13,8 +14,8 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-30 items-center">
 
         <img
-            src="./src/assets/photos/thiru.jpg"
-            alt="Boopathi"
+            src={thiru2}
+            alt="Thiru"
             className=" w-full max-w-xs mx-auto rounded-lg shadow-lg animate-fade-in"
           />
 

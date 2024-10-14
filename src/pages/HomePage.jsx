@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../components/ThemeContext'; // Import the ThemeContext
 import "./HomePage.css";
+import thiru from "/src/assets/photos/thiru1.jpg"
 
 const HomePage = () => {
   const { theme } = useContext(ThemeContext); // Get theme from context
@@ -11,7 +12,7 @@ const HomePage = () => {
       <div className="card card-side bg-red-100 text-white dark:bg-gray-800 shadow-2xl rounded-lg overflow-hidden max-w-4xl animate-slide-in">
         <figure className="flex-shrink-0">
           <img
-            src="./src/assets/photos/thiru1.jpg"
+            src={thiru}
             alt="Thiruvasagan R"
             className="w-96 h-full object-cover"
           />
